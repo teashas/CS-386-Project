@@ -101,10 +101,9 @@ PokéPicker is a basic, simple database application that can be used and impleme
 
 ### Interview 4: 
 **Summary:**  
-**Interviewer:** 
-**Interviewee:** 
-**When:** 
-
+**Interviewer:** \
+**Interviewee:** \
+**When:** \
 **Consumer segments:**
 
 **Key Insights:**
@@ -121,9 +120,10 @@ PokéPicker is a basic, simple database application that can be used and impleme
 
 ### Interview 5: 
 **Summary:** 
-Interviewer: 
-Interviewee: 
-When:
+
+Interviewer: \
+Interviewee: \
+When:\
 Consumer segments:
         
 **Key Insights:**
@@ -141,9 +141,10 @@ Consumer segments:
 ### Interview 6:
 
 **Summary:** 
-**Interviewer:** 
-**Interviewee:** 
-**When:** 
+
+**Interviewer:** \
+**Interviewee:** \
+**When:** \
 **Consumer Segment:**
 
 **Key Insights:**
