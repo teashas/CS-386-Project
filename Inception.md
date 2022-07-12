@@ -106,7 +106,7 @@ PokéPicker is a basic, simple database application that can be used and impleme
 
 
 ### Interview 4: 
-**Summary:**  
+**Summary:**   the user should be able to teach players how to create a team and web development is appropriate for this project
 **Interviewer:**  Kyle Young\
 **Interviewee:** Kelvin Rodrigez\
 **When:** 7/11/22 \
@@ -121,7 +121,9 @@ PokéPicker is a basic, simple database application that can be used and impleme
 - “If I pick gardevoir,  It should be intuitive on showing me how to spec gardevoir”
 
 **Hypotheses that were validated:**
-- 
+- Making the project a web development project will make development easier
+- Average users will need help developing a team
+
 
 **Assessment: Must have / Nice to have / Don’t care**
 - Must have - ability to spec pokemon 
@@ -129,24 +131,30 @@ PokéPicker is a basic, simple database application that can be used and impleme
 
 
 ### Interview 5: 
-**Summary:** 
+**Summary:** Sharing the results on social media will be an essential part of the application and having a visual of what you’ve created os fun to share
 
-Interviewer: \
-Interviewee: \
-When:\
-Consumer segments:
+Interviewer: Kyle Young\
+Interviewee: Christopher “Tofu” Sibley\
+When:7/11/22\
+Consumer segments: Social Gamer, Multiplayer
         
 **Key Insights:**
-- 
+- Users being able to share teams is essential 
+- There should be a visual element to the team creator and share on social media.
+
 
 **Representative quotes**
-- 
+- “Sharing with friends helps increase traffic”
+- “Remember the trainer cards from pokemon battle revolution”
+
 
 **Hypotheses that were validated**
-- 
+- Sharing the results to others would encourage them to use the software. 
 
 **Assessment: Must have / Nice to have / Don’t care**
-- 
+- Must Have - Share Results
+- Nice to have - Results Graphic
+
 
 ### Interview 6:
 
@@ -168,7 +176,8 @@ Consumer segments:
   - “I want to make generation-specific teams because I don’t really mess with the new stuff”
 
 **Hypotheses that were validated:**
-   - hypothesis
+   - Familiar UI as well as sort and search functions will benefit user experience.
+
 
 **Assessment: Must have / Nice to have / Don’t care**
   - Must have - Images of the Pokemon, search bar to find specific Pokemon.
