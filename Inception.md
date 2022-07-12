@@ -80,43 +80,53 @@ PokéPicker is a basic, simple database application that can be used and impleme
 
 ### Interview 3:
 
-**Summary:** 
+**Summary:** The user should be able to communicate with and learn more about other teams along with the pokemon themselves.
 
-**Interviewer:** \
-**Interviewee:** \
-**When:** \
-**Consumer segments:**
+**Interviewer:** Mya Davis\
+**Interviewee:** Alyssa Thompson\
+**When:** 7/11/22\
+**Consumer segments:** Adult
 
 
 **Key Insights:**
-   - 
+  - This could also become an informational application about pokemon 
+  - Make sure that it is easy to navigate and user friendly
+  -Be able to send your team to a friend
 
 **Representative quotes:**
-   - 
+   - “I would like to be able to talk to people about their teams” 
+   - “I don’t know if there is a large consumer base”
 
 **Hypotheses that were validated:**
-   - 
+   - The pokemon options should have background on the pokemon that they are choosing
 
 **Assessment: Must have / Nice to have / Don’t care**
+  - Information about the pokemon, their name, the creator of the teams name(Must have) 
+  - Interaction between teams(Nice to have)
+
 
 ### Interview 4: 
 **Summary:**  
-**Interviewer:** \
-**Interviewee:** \
-**When:** \
-**Consumer segments:**
+**Interviewer:**  Kyle Young\
+**Interviewee:** Kelvin Rodrigez\
+**When:** 7/11/22 \
+**Consumer segments:** Android & IOS user, Social gamer, Multiplayer, Software developer
 
 **Key Insights:**
-- 
+- Web development is probably the way to go for the fact that the software doesn’t need to run fast, and querying against a database will be easier to implement.
+- The app needs to teach players how to create a pokemon that has correct specs, and will help create synergistic teams
 
 **Representative quotes:**
-- 
+- “This makes way more sense to develop as a web app”
+- “If I pick gardevoir,  It should be intuitive on showing me how to spec gardevoir”
 
 **Hypotheses that were validated:**
 - 
 
 **Assessment: Must have / Nice to have / Don’t care**
-- 
+- Must have - ability to spec pokemon 
+- Nice to have - team builder help
+
 
 ### Interview 5: 
 **Summary:** 
@@ -140,23 +150,31 @@ Consumer segments:
 
 ### Interview 6:
 
-**Summary:** 
+**Summary:** Isaac is an old-school gamer who was interested in using the application to make some of his old Pokemon teams from the gameboy era. He wasn’t too interested in the sharing aspect of the application and made it clear that the UI had to have a Pokemon feel to it.
 
-**Interviewer:** \
-**Interviewee:** \
-**When:** \
-**Consumer Segment:**
+
+**Interviewer:** Ricardo Chairez\
+**Interviewee:** Isaac Barron\
+**When:** 7/10/2022\
+**Consumer Segment:** Adult gamer
 
 **Key Insights:**
+  - The UI needs to have sprites of the Pokemon and have a Pokemon feel to it.
+  - There needs to be a way to sort the 800+ Pokemon. Pokemon have many different qualities, so there should be many options to sort from.
    
 **Representative quotes:**
-   - 
+  - “I need to see sprites (images) of the Pokemon I’m selecting.”
+  - “It would be sick if the UI resembled one of the old gameboy games”
+  - “I want to make generation-specific teams because I don’t really mess with the new stuff”
 
 **Hypotheses that were validated:**
-   -
+   - hypothesis
 
 **Assessment: Must have / Nice to have / Don’t care**
-   - 
+  - Must have - Images of the Pokemon, search bar to find specific Pokemon.
+  - Nice to have - Pokemon “feel” to the UI and sort by release date.
+  - Don’t care - Wasn’t interested in the sharing aspect.
+
    
 ## 4. Final value proposition and consumer segments
 
