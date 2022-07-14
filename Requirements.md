@@ -80,6 +80,8 @@ The features it would validate are:
 ## 6. Use cases
 ***6.1 Use case diagram***
 
+![Use Case](https://github.com/teashas/CS-386-Project/blob/main/images/useCase.PNG) 
+
 
 ***6.2 Use case descriptions and interface sketch***
 
@@ -102,6 +104,9 @@ Main Flow:
   <li>The user creates the new team </li>
   <li>TThe system registers the new team with the associated name and user</li>
 </ol>
+
+
+![create team](https://github.com/teashas/CS-386-Project/blob/main/images/createTeam.PNG)
  
 <ins> Use Case: View team </ins>
 
@@ -124,6 +129,7 @@ Alternative Flows:
   <li>The system retrieves all teams not made by the user</li>
 </ol>
 
+![view team](https://github.com/teashas/CS-386-Project/blob/main/images/viewTeam.PNG)
  
 <ins>Use Case: Delete team</ins>
 
@@ -143,6 +149,7 @@ Main Flow:
   <li>The system removes the team </li>
 </ol>
 
+![delete team](https://github.com/teashas/CS-386-Project/blob/main/images/deleteTeam.PNG)
  
  
 <ins>Use Case: Share team</ins>
@@ -163,6 +170,7 @@ Main Flow:
   <li> The system redirects them to the social media platform and generates a post, linking to the team </li>
 </ol>
 
+![share team](https://github.com/teashas/CS-386-Project/blob/main/images/shareTeam.PNG)
 
 
 
@@ -183,3 +191,5 @@ Main Flow:
 
 ## 8. Issue Tracker
 https://trello.com/b/XnYpplP0/cs-386-project
+
+![trello](https://github.com/teashas/CS-386-Project/blob/main/images/trello.PNG)
