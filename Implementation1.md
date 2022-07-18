@@ -1,4 +1,8 @@
-# Team Project - D.4 Implementation 1
+# Project Inception
+
+_Group 01 – PokéPicker\
+Date and location: Jul 18, 2022\
+Group Members: Saima Teasha, Ricardo Chairez, Mya Davis, Kyle Young_
 
 ## 1. Introduction
 
