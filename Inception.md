@@ -6,7 +6,7 @@ Group Members: Saima Teasha, Ricardo Chairez, Mya Davis, Kyle Young_
 
 ## 1. Introduction
 
-As technology advances rapidly, gaming has become a significant part of most children in this generation. Pokémon falls under one of these computer games and is made up of over 1 million lines of code to meet all requirements. “ “ is an iOS application in Swift/XCode with Google Firebase as a database. The target of this project is to build a design process to create a Pokémon team creator application which allows the user to generate a team name, select six Pokémon, and then save the team. The user may view their team, as well as teams created by other users.  
+As technology advances rapidly, gaming has become a significant part of most children in this generation. Pokémon falls under one of these computer games and is made up of over 1 million lines of code to meet all requirements. PokePicker is an iOS application in Swift/XCode with Google Firebase as a database. The target of this project is to build a design process to create a Pokémon team creator application which allows the user to generate a team name, select six Pokémon, and then save the team. The user may view their team, as well as teams created by other users.  
 
 ## 2. Initial value proposition and consumer segments
 
