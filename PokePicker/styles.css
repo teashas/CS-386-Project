@@ -1,0 +1,22 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#team{
+
+    position: fixed;
+    text-align: center;
+    /* width: 100% */
+    
+}
+
+#pokemon-team{
+
+}
+
+.pokemon{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
