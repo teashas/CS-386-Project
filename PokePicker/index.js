@@ -2,6 +2,8 @@ var table = document.querySelector("#pokedex")
 var body = table.getElementsByTagName("tbody")[0]
 var rows = body.getElementsByTagName("tr");
 
+var input = document.getElementById("myInput").value.toUpperCase();
+
 var teamElements = document.querySelector("#pokemon-team").children
 
 var team = []
@@ -73,4 +75,28 @@ function updateTeam(){
         p.innerHTML = team[i].name["english"]
         image.src = "assets/sprites/" + team[i].image["sprite"]
     }
+}
+
+//search function
+function mySearch(){
+
+    
+
+    for(var i=0; i< rows.length; i++)
+    {
+        td = rows[i].getElementsByTagName("td")[3];
+        if (td)
+        {
+            txtValue = td.textContent || td.innerText;
+            if(txtValue.toUpperCase().indexOf(input) > -1)
+            {
+                rows[i].style.display = "";
+            }
+            else{
+                rows[i].style.display = "none";
+            }
+
+        }
+    }
+
 }
