@@ -74,9 +74,13 @@ READme file: https://github.com/teashas/CS-386-Project/blob/main/README.md
 
 ## 8. Look & feel
 
+In our non-functional requirements, we stated that we wanted the user-interface to resemble an old gameboy game. While we were not able to capture that aesthetic in this implementation, we do have a clean and usable front-end that will be easy to style when the time comes. 
+
+A notable interface choice in our “create team” screen is that the team is in a fixed position and always visible when the user scrolls through the Pokemon. This allows users to see what Pokemon they are selecting without scrolling back to the top every time.
 
 ## 9. Lesson Learned
 
+The biggest challenge we faced was utilizing GitHub and getting everybody on the same page. We struggled at the beginning (specifically making pull requests and merging to the main branch), but now we all have a better understanding of how GitHub works and we are all confident we can contribute to the project properly.
 
 ## 10. Demo
 
