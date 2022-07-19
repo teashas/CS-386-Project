@@ -10,17 +10,11 @@ What things you need to install the software and how to install them
 - Have VSVode downloaded to implement Javascript
 - Have JSON Pokemon Files downloaded 
 
-### Installing
-
-
 ## Running the tests
-
+To test our software go to the software page and test there.
 
 ### Break down into end to end tests
-
-
-### And coding style tests
-
+Click on the tabs for each homepage, then make a pokemon team.
 
 ## Deployment
 To deploy this project we used github pages.
@@ -35,7 +29,7 @@ To deploy this project we used github pages.
 Please read [CONTRIBUTING.md](https://github.com/teashas/CS-386-Project/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
-As of now we have no other versions of this project.
+This is the first version of this project.
 
 ## Authors
 - Mya Davis
@@ -44,4 +38,4 @@ As of now we have no other versions of this project.
 - Saima Jahan Teasha
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/teashas/CS-386-Project/blob/main/LICENSE.md) file for details
