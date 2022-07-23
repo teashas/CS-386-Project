@@ -2,7 +2,7 @@
 
 _Group 01 – PokéPicker \
 Date and location: Jul 22, 2022 \
-Group Members: Saima Teasha, Ricardo Chairez, Mya Davis, Kyle Young
+Group Members: Saima Teasha, Ricardo Chairez, Mya Davis, Kyle Young_
 
 ## 1. Introduction
 
@@ -53,5 +53,10 @@ Main Flow:
 
 - Single Responsibility Principle: The Pokemon class only stores pokemon information.
 
-- 
 - Open/Closed Principle: Our code follows the Open/Closed Principle because our code allows for users to create teams and view others teams without editing those teams.
+
+- Liskov Substitution Principle: Our code follows the Liskov Substitution Principle because the IOS app is available in desktop and mobile app forms for IOS products.
+
+- Interface Segregation principle: Our code follows the Interface Segregation Principle because we have one interface which is responsible for input from the client, and one interface responsible for the making of teams.
+
+- Dependency Inversion Principle:  Our code follows the Dependency Inversion principle because the classes which make the pokemon teams and the class which the pokemon are stored do not directly rely on each other. 
