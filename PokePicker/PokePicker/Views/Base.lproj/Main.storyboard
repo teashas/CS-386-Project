@@ -44,22 +44,6 @@
                                     <constraint firstAttribute="width" constant="151" id="iAx-sd-n8D"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We7-Iy-Vr2">
-                                <rect key="frame" x="174" y="600" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="pressed:" destination="CtZ-0X-Jcu" eventType="touchUpInside" id="jah-hx-74p"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aG-yM-hXA">
-                                <rect key="frame" x="74" y="88" width="266" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bAB-x3-VEw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,13 +54,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="GEj-41-gC5"/>
                     <connections>
-                        <outlet property="label" destination="8aG-yM-hXA" id="h27-tA-YyM"/>
                         <outlet property="teamName" destination="PY6-79-GOF" id="O9e-ew-GbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIz-4J-KKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1986.9565217391305" y="2534.5982142857142"/>
+            <point key="canvasLocation" x="-1988" y="1955"/>
         </scene>
         <!--Team CreateVC-->
         <scene sceneID="tne-QT-ifu">
@@ -173,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1987" y="3299"/>
+            <point key="canvasLocation" x="-1988" y="2719"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Uif-vP-TyI">
@@ -201,47 +184,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="2nw-Wg-bjb" kind="relationship" relationship="viewControllers" id="aZH-Lz-iWl"/>
-                        <segue destination="tyl-fb-6lF" kind="relationship" relationship="viewControllers" id="FP1-5v-vDc"/>
-                        <segue destination="Gsu-OP-rar" kind="relationship" relationship="viewControllers" id="fkw-NJ-ZNh"/>
+                        <segue destination="S7f-Eb-L60" kind="relationship" relationship="viewControllers" id="g8F-Zu-utY"/>
+                        <segue destination="XO3-Un-8nb" kind="relationship" relationship="viewControllers" id="htF-6o-ast"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKB-GZ-nNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1149" y="1100"/>
-        </scene>
-        <!--Community Teams-->
-        <scene sceneID="gkl-0k-wpw">
-            <objects>
-                <navigationController id="Gsu-OP-rar" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Community Teams" image="network" catalog="system" selectedImage="network" id="tgn-ig-RvQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R4j-HQ-XGj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="XO3-Un-8nb" kind="relationship" relationship="rootViewController" id="gdv-ez-f4T"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L2q-Bs-uVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-339" y="1815"/>
-        </scene>
-        <!--My Teams-->
-        <scene sceneID="zlS-O5-2KL">
-            <objects>
-                <navigationController id="tyl-fb-6lF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Teams" image="list.bullet" catalog="system" selectedImage="list.bullet" id="OWo-Dg-IJa"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tuv-9Z-tU2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="S7f-Eb-L60" kind="relationship" relationship="rootViewController" id="fKB-CX-jsc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qlx-8W-zwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1149" y="1816"/>
         </scene>
         <!--Create-->
         <scene sceneID="ApD-PP-Hnv">
@@ -258,25 +207,41 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mE-YJ-5sx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1972" y="1815"/>
+            <point key="canvasLocation" x="-1988" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--My Teams-->
         <scene sceneID="MeT-W3-S0f">
             <objects>
-                <viewController id="S7f-Eb-L60" sceneMemberID="viewController">
+                <viewController id="S7f-Eb-L60" customClass="MyTeamsVC" customModule="PokePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="psu-Sc-zKU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-uM-Mr9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9Jy-84-nDR"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Jy-84-nDR" firstAttribute="trailing" secondItem="5AH-uM-Mr9" secondAttribute="trailing" id="5Eg-YW-scr"/>
+                            <constraint firstItem="5AH-uM-Mr9" firstAttribute="top" secondItem="9Jy-84-nDR" secondAttribute="top" id="iis-BG-nao"/>
+                            <constraint firstItem="9Jy-84-nDR" firstAttribute="bottom" secondItem="5AH-uM-Mr9" secondAttribute="bottom" id="vV5-K3-Hud"/>
+                            <constraint firstItem="5AH-uM-Mr9" firstAttribute="leading" secondItem="9Jy-84-nDR" secondAttribute="leading" id="zma-Ld-8cm"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="My Teams" image="list.bullet" catalog="system" id="mt8-Nj-dtl"/>
                     <navigationItem key="navigationItem" id="Jnb-go-tMx"/>
+                    <connections>
+                        <outlet property="tableView" destination="5AH-uM-Mr9" id="IZM-zE-grT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrD-NJ-Nkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149" y="2535"/>
+            <point key="canvasLocation" x="-1149" y="1955"/>
         </scene>
-        <!--View Controller-->
+        <!--Community Teams-->
         <scene sceneID="VhA-1D-Sk8">
             <objects>
                 <viewController id="XO3-Un-8nb" sceneMemberID="viewController">
@@ -284,13 +249,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sgv-0X-aFp"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Community Teams" image="network" catalog="system" id="4Fi-fF-ULc"/>
                     <navigationItem key="navigationItem" id="JX3-hg-7Ir"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5U-zp-uRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339" y="2535"/>
+            <point key="canvasLocation" x="-338" y="1955"/>
         </scene>
     </scenes>
     <resources>
@@ -300,12 +266,6 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
