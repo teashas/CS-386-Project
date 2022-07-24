@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon_fire_red.ttf">
+            <string>Pokemon-Fire-Red</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonMemberView" customModule="PokePicker" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="YCI-sq-XGZ"/>
+                <outlet property="name" destination="4Po-BY-Ond" id="of7-W2-zBZ"/>
+                <outlet property="sprite" destination="8yi-Pm-cEJ" id="tt5-eh-OIU"/>
+                <outlet property="stack" destination="V5G-XV-v50" id="StG-Mn-Lxe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="570"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8q7-6s-uD5">
+                    <rect key="frame" x="10" y="54" width="422" height="472"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-XV-v50">
+                            <rect key="frame" x="183.5" y="201.5" width="55" height="69"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="006" translatesAutoresizingMaskIntoConstraints="NO" id="8yi-Pm-cEJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="55" id="4pf-3W-PZR"/>
+                                        <constraint firstAttribute="height" constant="55" id="gkd-Qu-qY8"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Po-BY-Ond">
+                                    <rect key="frame" x="0.0" y="55" width="55" height="14"/>
+                                    <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <gestureRecognizers/>
+                        </stackView>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="V5G-XV-v50" firstAttribute="centerY" secondItem="8q7-6s-uD5" secondAttribute="centerY" id="Mlq-lw-eQV"/>
+                        <constraint firstItem="V5G-XV-v50" firstAttribute="centerX" secondItem="8q7-6s-uD5" secondAttribute="centerX" id="pPF-qG-GDz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="8q7-6s-uD5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="8Cd-YM-miO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8q7-6s-uD5" secondAttribute="bottom" constant="10" id="BhX-XY-5HP"/>
+                <constraint firstItem="8q7-6s-uD5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="fgp-VL-fEY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8q7-6s-uD5" secondAttribute="trailing" constant="10" id="uRJ-QK-yln"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="157.97101449275362" y="212.94642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="006" width="40" height="40"/>
+    </resources>
+</document>

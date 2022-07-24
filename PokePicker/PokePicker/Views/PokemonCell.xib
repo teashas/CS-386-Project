@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon_fire_red.ttf">
+            <string>Pokemon-Fire-Red</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="PokemonCell" customModule="PokePicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgw-Dt-QXT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-Sf-Z15">
+                                <rect key="frame" x="10" y="64" width="55" height="55"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Dmi-Ph-URX"/>
+                                    <constraint firstAttribute="height" constant="55" id="lZE-71-eEH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2l-U5-SxI" userLabel="Username">
+                                <rect key="frame" x="75" y="81" width="67.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-Cx-Mt6" userLabel="Username">
+                                <rect key="frame" x="242.5" y="81" width="67.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sHp-Cx-Mt6" secondAttribute="trailing" constant="10" id="6TQ-Xb-SOT"/>
+                            <constraint firstItem="TT5-Sf-Z15" firstAttribute="leading" secondItem="Lgw-Dt-QXT" secondAttribute="leading" constant="10" id="J0W-aX-ars"/>
+                            <constraint firstItem="TT5-Sf-Z15" firstAttribute="centerY" secondItem="Lgw-Dt-QXT" secondAttribute="centerY" id="UHX-cr-dfq"/>
+                            <constraint firstItem="b2l-U5-SxI" firstAttribute="leading" secondItem="TT5-Sf-Z15" secondAttribute="trailing" constant="10" id="ZWg-t0-p7T"/>
+                            <constraint firstItem="b2l-U5-SxI" firstAttribute="centerY" secondItem="Lgw-Dt-QXT" secondAttribute="centerY" id="u8U-yX-JgD"/>
+                            <constraint firstItem="sHp-Cx-Mt6" firstAttribute="baseline" secondItem="b2l-U5-SxI" secondAttribute="baseline" id="ycN-5F-giT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lgw-Dt-QXT" secondAttribute="bottom" id="1vJ-V6-GoL"/>
+                    <constraint firstAttribute="trailing" secondItem="Lgw-Dt-QXT" secondAttribute="trailing" id="G4C-AV-4mu"/>
+                    <constraint firstItem="Lgw-Dt-QXT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JRQ-Wf-CZf"/>
+                    <constraint firstItem="Lgw-Dt-QXT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g1u-Cw-X4r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="id" destination="sHp-Cx-Mt6" id="52l-xU-pm1"/>
+                <outlet property="name" destination="b2l-U5-SxI" id="m5F-EO-8oe"/>
+                <outlet property="sprite" destination="TT5-Sf-Z15" id="BBU-L0-ceZ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
