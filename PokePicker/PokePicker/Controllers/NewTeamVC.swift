@@ -10,7 +10,6 @@ import UIKit
 class NewTeamVC: UIViewController {
     @IBOutlet weak var teamName: UITextField!
     
-    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.delegate = self

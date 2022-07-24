@@ -22,6 +22,7 @@ class MyTeamsVC: UIViewController {
         
         
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: "TeamCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.rowHeight = 51
         getTeams()
@@ -44,6 +45,19 @@ class MyTeamsVC: UIViewController {
         }
     }
     
+    func deleteTeam(index: Int){
+        print(index)
+        self.context.delete(self.teams[index])
+        do{
+            try self.context.save()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+        self.getTeams()
+        
+    }
+    
 
 }
 
@@ -63,8 +77,18 @@ extension MyTeamsVC: UITableViewDataSource{
         cell.name.text = team.name
         return cell
     }
-    
-    
+}
+
+extension MyTeamsVC: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let modifyAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            self.deleteTeam(index: indexPath.row)
+            success(true)
+        })
+        modifyAction.backgroundColor = .systemRed
+        
+        return UISwipeActionsConfiguration(actions: [modifyAction])
+    }
 }
 
 extension MyTeamsVC: UITabBarControllerDelegate{
