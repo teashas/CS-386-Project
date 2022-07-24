@@ -9,21 +9,69 @@ import UIKit
 
 class MyTeamsVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var teams: [Team] = []
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
+        self.tabBarController?.delegate = self
+        
+        
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "TeamCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.rowHeight = 51
+        getTeams()
+        
+        
+        //super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func getTeams(){
+        do{
+            let swag = try context.fetch(Team.fetchRequest())
+            teams = swag
+            tableView.reloadData()
+            
+        }
+        catch{
+            print(error.localizedDescription)
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension MyTeamsVC: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return teams.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TeamCell
+        let team = teams[indexPath.row]
+        for (index, pokemon) in team.members!.enumerated(){
+            var swag = pokemon as! Pokemon
+            cell.team[index].image = UIImage(named: swag.spriteRef!)
+        }
+        
+        cell.name.text = team.name
+        return cell
+    }
+    
+    
+}
 
+extension MyTeamsVC: UITabBarControllerDelegate{
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if(viewController == self){
+            getTeams()
+        }
+    }
 }
