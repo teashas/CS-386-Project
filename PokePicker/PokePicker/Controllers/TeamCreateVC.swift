@@ -12,9 +12,7 @@ class TeamCreateVC: UIViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var teamNameLabel: UILabel!
-    
     @IBOutlet weak var pokemon1: PokemonMemberView!
     @IBOutlet weak var pokemon2: PokemonMemberView!
     @IBOutlet weak var pokemon3: PokemonMemberView!
@@ -22,16 +20,16 @@ class TeamCreateVC: UIViewController {
     @IBOutlet weak var pokemon5: PokemonMemberView!
     @IBOutlet weak var pokemon6: PokemonMemberView!
     
-    var pokemonTableManager = PokemonTableManager()
+    //var pokemonTableManager = PokemonManager()
     var pokemons: [Pokemon] = []
+    var teamName: String?
+    var selectedPokemon: PokemonMemberView?
+    var pokemonViewIndex: Int = 0
     
 //    lazy var team: [PokemonSelectView] = {
 //        return [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6]
 //    }()
-    var teamName: String?
     
-    
-    var selectedPokemon: PokemonMemberView?
     
     override func viewDidLoad() {
         
@@ -45,8 +43,8 @@ class TeamCreateVC: UIViewController {
         selectedPokemon = pokemon1
         pokemon1.setBorder()
         
-        pokemonTableManager.delegate = self
-        pokemonTableManager.getPokemon()
+        PokemonManager.shared.delegate = self
+        PokemonManager.shared.getPokemon()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -58,7 +56,6 @@ class TeamCreateVC: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Create", style: .plain, target: self, action: #selector(createPressed))
     }
     @objc func createPressed(){
-        print("heyyy")
         var newTeam = Team(context: context)
         newTeam.name = teamName
         newTeam.addToMembers(pokemon1.pokemon!)
@@ -74,6 +71,7 @@ class TeamCreateVC: UIViewController {
         catch{
             print(error.localizedDescription)
         }
+        navigationController?.popViewController(animated: true)
         
     }
     
@@ -86,7 +84,37 @@ class TeamCreateVC: UIViewController {
         pokemon6.setPokemon(pokemon: pokemons[130])
     }
     
+    func viewPokemon(index: Int){
+        pokemonViewIndex = index
+        performSegue(withIdentifier: "GoToViewPokemon", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "GoToViewPokemon"){
+            let destination = segue.destination as! ViewPokemonVC
+            let pokemon = pokemons[pokemonViewIndex]
+            destination.spriteRef = pokemon.spriteRef
+            destination.name = pokemon.name
+            
+            destination.types = "Type: "
+            for type in pokemon.types!{
+                destination.types = destination.types! + " " + type
+            }
+            
+            
+            destination.hp = "HP: " + (pokemon.stats?.hp)!
+            destination.attack = "Attack: " + (pokemon.stats?.attack)!
+            destination.defense = "Defense: " + (pokemon.stats?.defense)!
+            destination.spAttack = "spAttack: " + (pokemon.stats?.spAttack)!
+            destination.spDefense = "spDefense: " + (pokemon.stats?.spDefense)!
+            destination.speed = "Speed: " + (pokemon.stats?.speed)!
+            
+        }
+    }
+    
 }
+
+//MARK: - PokemonManagerDelegate
 
 extension TeamCreateVC: PokemonManagerDelegate{
     func didGetPokemon(pokeArr: [Pokemon]) {
@@ -95,6 +123,8 @@ extension TeamCreateVC: PokemonManagerDelegate{
         tableView.reloadData()
     }
 }
+
+//MARK: - UITableViewDataSource
 
 extension TeamCreateVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -111,16 +141,28 @@ extension TeamCreateVC: UITableViewDataSource{
         cell.selectionStyle = .gray
         return cell
     }
-    
-    
 }
+
+//MARK: - UITableViewDelegate
 
 extension TeamCreateVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let pokemon = pokemons[indexPath.row]
         selectedPokemon?.setPokemon(pokemon: pokemon)
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let modifyAction = UIContextualAction(style: .normal, title:  "View", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            self.viewPokemon(index: indexPath.row)
+            success(true)
+        })
+        modifyAction.backgroundColor = .systemBlue
+        
+        return UISwipeActionsConfiguration(actions: [modifyAction])
+    }
 }
+
+//MARK: - PokemonSelectViewDelegate
 
 extension TeamCreateVC: PokemonSelectViewDelegate{
     func didSelect(pokemonSelectView: PokemonMemberView) {

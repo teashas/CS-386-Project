@@ -2,7 +2,7 @@
 //  Pokemon+CoreDataProperties.swift
 //  PokePicker
 //
-//  Created by Chip Chairez on 7/23/22.
+//  Created by Chip Chairez on 7/24/22.
 //
 //
 
@@ -19,7 +19,9 @@ extension Pokemon {
     @NSManaged public var id: String?
     @NSManaged public var name: String?
     @NSManaged public var spriteRef: String?
+    @NSManaged public var types: [String]?
     @NSManaged public var team: Team?
+    @NSManaged public var stats: Stats?
 
 }
 
