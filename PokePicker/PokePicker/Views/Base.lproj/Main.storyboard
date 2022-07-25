@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="3508"/>
+            <point key="canvasLocation" x="-1988" y="3560"/>
         </scene>
         <!--View TeamVC-->
         <scene sceneID="odD-bO-ohn">
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEI-ZF-H64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149.2753623188407" y="3507.5892857142858"/>
+            <point key="canvasLocation" x="-1149" y="3560"/>
         </scene>
         <!--View PokemonVC-->
         <scene sceneID="u15-jx-squ">
@@ -216,16 +216,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-ga-CEW">
-                                <rect key="frame" x="0.0" y="441" width="414" height="238"/>
+                                <rect key="frame" x="0.0" y="456.5" width="414" height="207"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-g1-pap">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
-                                        <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CZL-3k-rRo">
-                                        <rect key="frame" x="0.0" y="31" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-dm-J1u">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -242,7 +236,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-gJ-LFy">
-                                        <rect key="frame" x="0.0" y="62" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="31" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-xh-ZMc">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -259,7 +253,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-76-tXh">
-                                        <rect key="frame" x="0.0" y="93" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="62" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVK-j8-XJT">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -276,7 +270,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-du-jHp">
-                                        <rect key="frame" x="0.0" y="124" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="93" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29m-Nm-7Xx">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -293,7 +287,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-fm-fG4">
-                                        <rect key="frame" x="0.0" y="155" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="124" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sp. Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-P9-g7a">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -310,7 +304,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="weK-2L-zTg">
-                                        <rect key="frame" x="0.0" y="186" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="155" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sp. Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-gL-hC0">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -327,7 +321,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-Sh-TzQ">
-                                        <rect key="frame" x="0.0" y="217" width="414" height="21"/>
+                                        <rect key="frame" x="0.0" y="186" width="414" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-X3-tUz">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
@@ -352,13 +346,22 @@
                                     <constraint firstAttribute="width" constant="150" id="yB8-kH-fNE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-g1-pap">
+                                <rect key="frame" x="0.0" y="363" width="414" height="21"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W8c-jm-PKQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8oo-XQ-fMU" firstAttribute="centerX" secondItem="dZ0-tQ-YGx" secondAttribute="centerX" id="85c-o7-TWB"/>
                             <constraint firstItem="DRw-ga-CEW" firstAttribute="centerY" secondItem="dZ0-tQ-YGx" secondAttribute="centerY" multiplier="1.33" id="HY2-FM-8Em"/>
+                            <constraint firstItem="obd-g1-pap" firstAttribute="trailing" secondItem="W8c-jm-PKQ" secondAttribute="trailing" id="JGN-W8-nto"/>
+                            <constraint firstItem="obd-g1-pap" firstAttribute="leading" secondItem="W8c-jm-PKQ" secondAttribute="leading" id="SDa-TQ-voD"/>
                             <constraint firstItem="W8c-jm-PKQ" firstAttribute="trailing" secondItem="DRw-ga-CEW" secondAttribute="trailing" id="aQT-bw-PJ6"/>
+                            <constraint firstItem="obd-g1-pap" firstAttribute="top" secondItem="8oo-XQ-fMU" secondAttribute="bottom" constant="10" id="j4p-QG-3uy"/>
                             <constraint firstItem="8oo-XQ-fMU" firstAttribute="centerY" secondItem="dZ0-tQ-YGx" secondAttribute="centerY" multiplier="0.66" id="roh-HF-QIb"/>
                             <constraint firstItem="DRw-ga-CEW" firstAttribute="leading" secondItem="W8c-jm-PKQ" secondAttribute="leading" id="z62-Hy-vDS"/>
                         </constraints>
@@ -378,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0g-9s-NUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1601" y="4281"/>
+            <point key="canvasLocation" x="-1600" y="4363"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G0I-Uv-S47">
