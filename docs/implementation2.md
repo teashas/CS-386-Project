@@ -23,7 +23,7 @@ Print Screen:
 
 ## 4. Demo
 
-[https://github.com/teashas/CS-386-Project/blob/main/images/implementationDemo.m4v](https://www.youtube.com/watch?v=2SpRxBBq45k)
+https://www.youtube.com/watch?v=y66Dca0wdnM
 
 ## 5. Code Quality
 
