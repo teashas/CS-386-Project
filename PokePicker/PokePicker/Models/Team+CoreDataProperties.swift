@@ -2,7 +2,7 @@
 //  Team+CoreDataProperties.swift
 //  PokePicker
 //
-//  Created by Chip Chairez on 7/23/22.
+//  Created by Chip Chairez on 7/24/22.
 //
 //
 

@@ -7,9 +7,17 @@
 import Foundation
 import UIKit
 
-struct PokemonTableManager{
+class PokemonManager{
+    //public static let shared = PokemonManager()
+    
+    static let shared: PokemonManager = {
+            let instance = PokemonManager()
+            return instance
+        }()
+    
     var delegate: PokemonManagerDelegate?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     func getPokemon(){
         if let url = Bundle.main.url(forResource: "pokedex", withExtension: "json"){
@@ -31,18 +39,24 @@ struct PokemonTableManager{
             let decodedData = try decoder.decode([PokemonData].self, from: data)
             var pokeArr: [Pokemon] = []
             for pokemonData in decodedData{
-                let id = String(pokemonData.id)
-                let name = pokemonData.name.english
-                let spriteString = pokemonData.image.sprite
-                //let image = UIImage(named: spriteString)
+                
+                var stats = Stats(context: context)
+                stats.hp = String(pokemonData.base.HP)
+                stats.attack = String(pokemonData.base.Attack)
+                stats.defense = String(pokemonData.base.Defense)
+                stats.spAttack = String(pokemonData.base.spAttack)
+                stats.spDefense = String(pokemonData.base.spDefense)
+                stats.speed = String(pokemonData.base.Speed)
+                
                 var pokemon = Pokemon(context: context)
-                pokemon.id = id
-                pokemon.name = name
-                pokemon.spriteRef = spriteString
+                pokemon.id = String(pokemonData.id)
+                pokemon.name = pokemonData.name.english
+                pokemon.spriteRef = pokemonData.image.sprite
+                pokemon.types = pokemonData.type
+                pokemon.stats = stats
                 
                 pokeArr.append(pokemon)
             }
-            print(pokeArr)
             return pokeArr
         }
         catch{
@@ -59,14 +73,27 @@ struct PokemonData: Codable{
     var name: Name
     var image: Image
     var id: Int
+    var type: [String]
+    var base: Base
     
     struct Name: Codable{
         var english: String
     }
     
+    struct Base: Codable{
+        var HP: Int
+        var Attack: Int
+        var Defense: Int
+        var spAttack: Int
+        var spDefense: Int
+        var Speed: Int
+    }
+    
     struct Image: Codable{
         var sprite: String
     }
+
+    
 }
 
 
