@@ -15,6 +15,7 @@ class PokemonCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        sprite?.layer.magnificationFilter = CALayerContentsFilter.nearest
 
     }
 

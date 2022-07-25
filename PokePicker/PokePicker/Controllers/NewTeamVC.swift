@@ -21,6 +21,7 @@ class NewTeamVC: UIViewController {
         if (teamName.text != ""){
             let teamCreateVC = self.storyboard?.instantiateViewController(withIdentifier: "TeamCreateVC") as! TeamCreateVC
             teamCreateVC.teamName = teamName.text
+            teamName.text = ""
             self.tabBarController?.tabBar.isHidden = true
             self.navigationController?.pushViewController(teamCreateVC, animated: true)
         }

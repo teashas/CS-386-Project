@@ -17,7 +17,7 @@ class MyTeamsVC: UIViewController {
     
     
     override func viewDidLoad() {
-        self.tabBarController?.delegate = self
+        tabBarController?.delegate = self
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -74,6 +74,7 @@ extension MyTeamsVC: UITableViewDataSource{
         for (index, pokemon) in team.members!.enumerated(){
             let pokemon = pokemon as! Pokemon
             cell.team[index].image = UIImage(named: pokemon.spriteRef!)
+            cell.team[index].layer.magnificationFilter = CALayerContentsFilter.nearest
         }
         
         cell.name.text = team.name
@@ -101,7 +102,8 @@ extension MyTeamsVC: UITableViewDelegate{
 extension MyTeamsVC: UITabBarControllerDelegate{
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        if(viewController == self){
+        print(viewController)
+        if(viewController == self.parent){
             getTeams()
         }
     }

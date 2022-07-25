@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIz-4J-KKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="2837"/>
+            <point key="canvasLocation" x="-1988" y="2776"/>
         </scene>
         <!--Team CreateVC-->
         <scene sceneID="tne-QT-ifu">
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="3569"/>
+            <point key="canvasLocation" x="-1988" y="3508"/>
         </scene>
         <!--View TeamVC-->
         <scene sceneID="odD-bO-ohn">
@@ -170,16 +170,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2q-NA-xNy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="9wG-j0-aml"/>
+                                    <constraint firstAttribute="height" constant="51" id="9wG-j0-aml"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3qW-Vz-WDP">
-                                <rect key="frame" x="0.0" y="109" width="414" height="704"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEI-ZF-H64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149" y="3569"/>
+            <point key="canvasLocation" x="-1149.2753623188407" y="3507.5892857142858"/>
         </scene>
         <!--View PokemonVC-->
         <scene sceneID="u15-jx-squ">
@@ -215,101 +215,170 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-g1-pap">
-                                <rect key="frame" x="88" y="244" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-Q0-7fQ">
-                                <rect key="frame" x="86" y="298" width="241" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-Rn-cNX">
-                                <rect key="frame" x="87" y="358" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wer-08-Z7o">
-                                <rect key="frame" x="88" y="408" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ0-u7-szF">
-                                <rect key="frame" x="88" y="447" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH0-Ah-FgB">
-                                <rect key="frame" x="87" y="476" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x53-aE-5lr">
-                                <rect key="frame" x="88" y="543" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-wO-fvG">
-                                <rect key="frame" x="87" y="614" width="239" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8oo-XQ-fMU">
-                                <rect key="frame" x="86" y="71" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-ga-CEW">
+                                <rect key="frame" x="0.0" y="441" width="414" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-g1-pap">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
+                                        <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CZL-3k-rRo">
+                                        <rect key="frame" x="0.0" y="31" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-dm-J1u">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-Q0-7fQ">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-gJ-LFy">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-xh-ZMc">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ur7-6a-8AV">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-76-tXh">
+                                        <rect key="frame" x="0.0" y="93" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVK-j8-XJT">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VF-Dc-lKa">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-du-jHp">
+                                        <rect key="frame" x="0.0" y="124" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29m-Nm-7Xx">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-C7-Aqh">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-fm-fG4">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sp. Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-P9-g7a">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hr-LZ-4Ta">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="weK-2L-zTg">
+                                        <rect key="frame" x="0.0" y="186" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sp. Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-gL-hC0">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiw-Iw-gha">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-Sh-TzQ">
+                                        <rect key="frame" x="0.0" y="217" width="414" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-X3-tUz">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yku-4u-34t">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="21"/>
+                                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8oo-XQ-fMU">
+                                <rect key="frame" x="132" y="203" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="BkT-3t-vVx"/>
+                                    <constraint firstAttribute="width" constant="150" id="yB8-kH-fNE"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W8c-jm-PKQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8oo-XQ-fMU" firstAttribute="centerX" secondItem="dZ0-tQ-YGx" secondAttribute="centerX" id="85c-o7-TWB"/>
+                            <constraint firstItem="DRw-ga-CEW" firstAttribute="centerY" secondItem="dZ0-tQ-YGx" secondAttribute="centerY" multiplier="1.33" id="HY2-FM-8Em"/>
+                            <constraint firstItem="W8c-jm-PKQ" firstAttribute="trailing" secondItem="DRw-ga-CEW" secondAttribute="trailing" id="aQT-bw-PJ6"/>
+                            <constraint firstItem="8oo-XQ-fMU" firstAttribute="centerY" secondItem="dZ0-tQ-YGx" secondAttribute="centerY" multiplier="0.66" id="roh-HF-QIb"/>
+                            <constraint firstItem="DRw-ga-CEW" firstAttribute="leading" secondItem="W8c-jm-PKQ" secondAttribute="leading" id="z62-Hy-vDS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7XD-qI-Ez8"/>
                     <connections>
-                        <outlet property="attackLabel" destination="wer-08-Z7o" id="efH-fb-e4q"/>
-                        <outlet property="defenseLabel" destination="MQ0-u7-szF" id="JeL-hk-aj2"/>
-                        <outlet property="hpLabel" destination="ZdF-Rn-cNX" id="puD-Z7-78J"/>
+                        <outlet property="attackLabel" destination="7VF-Dc-lKa" id="fXa-ce-GfE"/>
+                        <outlet property="defenseLabel" destination="Qdr-C7-Aqh" id="qx5-Vv-IjM"/>
+                        <outlet property="hpLabel" destination="Ur7-6a-8AV" id="jEm-aN-bvP"/>
                         <outlet property="nameLabel" destination="obd-g1-pap" id="4ja-Jq-4KU"/>
-                        <outlet property="spAttackLabel" destination="oH0-Ah-FgB" id="c1U-e0-srx"/>
-                        <outlet property="spDefenseLabel" destination="x53-aE-5lr" id="GgR-dR-zDZ"/>
-                        <outlet property="speedLabel" destination="fxV-wO-fvG" id="N6j-vG-OGB"/>
+                        <outlet property="spAttackLabel" destination="7hr-LZ-4Ta" id="X1B-uB-S7f"/>
+                        <outlet property="spDefenseLabel" destination="tiw-Iw-gha" id="y9V-hj-2Hk"/>
+                        <outlet property="speedLabel" destination="yku-4u-34t" id="VyV-uc-CFs"/>
                         <outlet property="sprite" destination="8oo-XQ-fMU" id="hz4-g3-2tG"/>
                         <outlet property="typeLabel" destination="7sT-Q0-7fQ" id="nYR-NE-xhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0g-9s-NUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="4383"/>
-        </scene>
-        <!--LoginVC-->
-        <scene sceneID="Uif-vP-TyI">
-            <objects>
-                <viewController id="Elg-ug-eCg" customClass="LoginVC" customModule="PokePicker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DAd-na-nS0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="oso-Fd-Abq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4cm-JX-QVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1149" y="390"/>
+            <point key="canvasLocation" x="-1601" y="4281"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G0I-Uv-S47">
@@ -355,16 +424,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-uM-Mr9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Teams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsG-DM-jYe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="kYk-PL-1tX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Jy-84-nDR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Jy-84-nDR" firstAttribute="trailing" secondItem="5AH-uM-Mr9" secondAttribute="trailing" id="5Eg-YW-scr"/>
-                            <constraint firstItem="5AH-uM-Mr9" firstAttribute="top" secondItem="9Jy-84-nDR" secondAttribute="top" id="iis-BG-nao"/>
+                            <constraint firstItem="zsG-DM-jYe" firstAttribute="leading" secondItem="9Jy-84-nDR" secondAttribute="leading" id="QhB-TX-Mam"/>
+                            <constraint firstItem="9Jy-84-nDR" firstAttribute="trailing" secondItem="zsG-DM-jYe" secondAttribute="trailing" id="TIe-6b-BmX"/>
+                            <constraint firstItem="5AH-uM-Mr9" firstAttribute="top" secondItem="zsG-DM-jYe" secondAttribute="bottom" id="mGz-cO-4os"/>
+                            <constraint firstItem="zsG-DM-jYe" firstAttribute="top" secondItem="9Jy-84-nDR" secondAttribute="top" id="rVv-n4-4XY"/>
                             <constraint firstItem="9Jy-84-nDR" firstAttribute="bottom" secondItem="5AH-uM-Mr9" secondAttribute="bottom" id="vV5-K3-Hud"/>
                             <constraint firstItem="5AH-uM-Mr9" firstAttribute="leading" secondItem="9Jy-84-nDR" secondAttribute="leading" id="zma-Ld-8cm"/>
                         </constraints>
@@ -378,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrD-NJ-Nkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1149" y="2837"/>
+            <point key="canvasLocation" x="-1149" y="2776"/>
         </scene>
         <!--My Teams-->
         <scene sceneID="9j1-O8-JrK">
@@ -416,7 +497,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dYI-aQ-lbG"/>
+        <segue reference="V5X-DG-x2b"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="638" height="1134"/>

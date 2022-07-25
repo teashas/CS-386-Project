@@ -20,19 +20,6 @@ class ViewPokemonVC: UIViewController {
     @IBOutlet weak var spDefenseLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-//    var spriteRef: String?
-//
-//    var name: String?
-//
-//    var types: String?
-//
-//    var hp: String?
-//    var attack: String?
-//    var defense: String?
-//    var spAttack: String?
-//    var spDefense: String?
-//    var speed: String?
-    
     var pokemon: Pokemon?
     override func viewDidLoad() {
         guard let pokemon = pokemon else{
@@ -41,34 +28,21 @@ class ViewPokemonVC: UIViewController {
         
         super.viewDidLoad()
         sprite.image = UIImage(named: pokemon.spriteRef ?? "")
-        nameLabel.text = "Name: " + pokemon.name!
-        typeLabel.text = "Type: "
-        typeLabel.text = typeLabel.text! + pokemon.types![0]
+        sprite.layer.magnificationFilter = CALayerContentsFilter.nearest
         
-        hpLabel.text = "Hp: " + (pokemon.stats?.hp)!
-        attackLabel.text = "Attack: " + (pokemon.stats?.attack)!
-        defenseLabel.text = "Defense: " + (pokemon.stats?.defense)!
-        spAttackLabel.text = "spAttack: " + (pokemon.stats?.spAttack)!
-        spDefenseLabel.text = "spDefense: " + (pokemon.stats?.spDefense)!
-        speedLabel.text = "Speed: " + (pokemon.stats?.speed)!
+        nameLabel.text = pokemon.name
+        typeLabel.text = pokemon.types![0]
+        if pokemon.types?.count == 2{
+            typeLabel.text = typeLabel.text! + "/" + pokemon.types![1]
+        }
         
+        hpLabel.text = pokemon.stats?.hp
+        attackLabel.text = pokemon.stats?.attack
+        defenseLabel.text = pokemon.stats?.defense
+        spAttackLabel.text = pokemon.stats?.spAttack
+        spDefenseLabel.text = pokemon.stats?.spDefense
+        speedLabel.text = pokemon.stats?.speed
         
-//        destination.hp = "HP: " + (pokemon.stats?.hp)!
-//        destination.attack = "Attack: " + (pokemon.stats?.attack)!
-//        destination.defense = "Defense: " + (pokemon.stats?.defense)!
-//        destination.spAttack = "spAttack: " + (pokemon.stats?.spAttack)!
-//        destination.spDefense = "spDefense: " + (pokemon.stats?.spDefense)!
-//        destination.speed = "Speed: " + (pokemon.stats?.speed)!
-//        nameLabel.text = name
-//        typeLabel.text = types
-//        sprite.image = UIImage(named: spriteRef ?? "")
-//
-//        hpLabel.text = hp
-//        attackLabel.text = attack
-//        defenseLabel.text = defense
-//        spAttackLabel.text = spAttack
-//        spDefenseLabel.text = spDefense
-//        speedLabel.text = speed
     }
     
 
