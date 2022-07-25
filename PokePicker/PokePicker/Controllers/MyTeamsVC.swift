@@ -12,14 +12,12 @@ class MyTeamsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var teams: [Team] = []
-    
+    var selectedTeam: Team?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     override func viewDidLoad() {
-        
         self.tabBarController?.delegate = self
-        
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -27,10 +25,6 @@ class MyTeamsVC: UIViewController {
         tableView.rowHeight = 51
         getTeams()
         
-        
-        //super.viewDidLoad()
-        
-
     }
     
     func getTeams(){
@@ -58,6 +52,14 @@ class MyTeamsVC: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "GoToViewTeam"){
+            let destination = segue.destination as! ViewTeamVC
+            let team = selectedTeam
+            destination.teamName = team?.name
+            destination.pokemons = team?.members?.array as! [Pokemon]
+        }
+    }
 
 }
 
@@ -70,8 +72,8 @@ extension MyTeamsVC: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TeamCell
         let team = teams[indexPath.row]
         for (index, pokemon) in team.members!.enumerated(){
-            var swag = pokemon as! Pokemon
-            cell.team[index].image = UIImage(named: swag.spriteRef!)
+            let pokemon = pokemon as! Pokemon
+            cell.team[index].image = UIImage(named: pokemon.spriteRef!)
         }
         
         cell.name.text = team.name
@@ -88,6 +90,11 @@ extension MyTeamsVC: UITableViewDelegate{
         modifyAction.backgroundColor = .systemRed
         
         return UISwipeActionsConfiguration(actions: [modifyAction])
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedTeam = teams[indexPath.row]
+        performSegue(withIdentifier: "GoToViewTeam", sender: self)
     }
 }
 

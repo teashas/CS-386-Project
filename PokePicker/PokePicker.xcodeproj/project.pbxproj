@@ -33,6 +33,7 @@
 		45B51AA7288B15C400341D4F /* PokemonMemberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B51AA6288B15C400341D4F /* PokemonMemberView.xib */; };
 		45B51AAA288B286800341D4F /* PokemonGb-RAeo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B51AA9288B285700341D4F /* PokemonGb-RAeo.ttf */; };
 		45B51AAE288B31E200341D4F /* pokemon_fire_red.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B51AAD288B316F00341D4F /* pokemon_fire_red.ttf */; };
+		45C498EA288F037600C88FB1 /* ViewTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C498E9288F037500C88FB1 /* ViewTeamVC.swift */; };
 		45D42E7E288C6EE000D93B87 /* NewTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D42E7D288C6EE000D93B87 /* NewTeamVC.swift */; };
 		45D42E80288C961400D93B87 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D42E7F288C961400D93B87 /* LoginVC.swift */; };
 		45D42E87288CA0E500D93B87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45D42E86288CA0E500D93B87 /* GoogleService-Info.plist */; };
@@ -66,6 +67,7 @@
 		45B51AA6288B15C400341D4F /* PokemonMemberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonMemberView.xib; sourceTree = "<group>"; };
 		45B51AA9288B285700341D4F /* PokemonGb-RAeo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PokemonGb-RAeo.ttf"; sourceTree = "<group>"; };
 		45B51AAD288B316F00341D4F /* pokemon_fire_red.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon_fire_red.ttf; sourceTree = "<group>"; };
+		45C498E9288F037500C88FB1 /* ViewTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTeamVC.swift; sourceTree = "<group>"; };
 		45D42E7D288C6EE000D93B87 /* NewTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamVC.swift; sourceTree = "<group>"; };
 		45D42E7F288C961400D93B87 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		45D42E86288CA0E500D93B87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				45B51AA4288B15B200341D4F /* PokemonMemberView.swift */,
 				453522DF288DBA6800079C4D /* MyTeamsVC.swift */,
 				45352353288E251800079C4D /* ViewPokemonVC.swift */,
+				45C498E9288F037500C88FB1 /* ViewTeamVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				4535234C288E1DEF00079C4D /* Stats+CoreDataProperties.swift in Sources */,
 				45352300288DFF3900079C4D /* PokePicker.xcdatamodeld in Sources */,
 				4535234B288E1DEE00079C4D /* Stats+CoreDataClass.swift in Sources */,
+				45C498EA288F037600C88FB1 /* ViewTeamVC.swift in Sources */,
 				4535234D288E1DEF00079C4D /* Pokemon+CoreDataClass.swift in Sources */,
 				4535234E288E1DEF00079C4D /* Pokemon+CoreDataProperties.swift in Sources */,
 				459EF93F288AEC6A005CE769 /* TeamCreateVC.swift in Sources */,
