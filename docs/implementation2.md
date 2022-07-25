@@ -14,12 +14,68 @@ Link to Trello: https://trello.com/b/XnYpplP0/cs-386-project
 
 ## 2. Implemented Requirements
 
-Requirement:  \
-Issue:  \
-Pull Request:  \
-Implemented by:  \
-Approved by:  \
+Requirement: _As a gamer, I want to view a list of all Pokemon to select from when creating my team._ \
+Issue:  https://github.com/teashas/CS-386-Project/issues/3 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/27 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/viewList.PNG)
+
+Requirement: _As a gamer, I want to select the Pokemon I want to add to my team._ \
+Issue:  https://github.com/teashas/CS-386-Project/issues/6 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/27 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/selectPokemon.PNG)
+
+Requirement: _As a gamer, I want to create a team of Pokemon._ \
+Issue:   https://github.com/teashas/CS-386-Project/issues/7 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/27 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/createATeam.PNG)
+
+Requirement: _As a gamer, I want to view my Pokemon teams._ \
+Issue:   https://github.com/teashas/CS-386-Project/issues/8 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/28 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
 Print Screen: 
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/viewPokemonTeam.PNG)
+
+Requirement: _As a gamer, I want to be able to delete teams I create._ \
+Issue:   https://github.com/teashas/CS-386-Project/issues/29 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/30 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/deleteCreatedTeams.PNG)
+
+Requirement: _As a gamer, I want to see a descriptive view of a Pokemon_ \
+Issue:   https://github.com/teashas/CS-386-Project/issues/31 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/32 \
+Implemented by: Ricardo Chairez \
+Approved by: Mya Davis \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/pokemonDescription.PNG)
+
+Requirement: _As a gamer, I want to see a descriptive view of a Pokemon_ \
+Issue:   https://github.com/teashas/CS-386-Project/issues/9 \
+Pull Request: https://github.com/teashas/CS-386-Project/pull/33 \
+Implemented by: Ricardo Chairez \
+Approved by: Saima Teasha \
+Print Screen:
+
+![Print Screen](https://github.com/teashas/CS-386-Project/blob/main/images/teamDescriptiveView.PNG)
 
 ## 4. Demo
 
