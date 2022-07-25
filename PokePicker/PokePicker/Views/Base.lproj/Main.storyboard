@@ -55,11 +55,12 @@
                     <navigationItem key="navigationItem" id="GEj-41-gC5"/>
                     <connections>
                         <outlet property="teamName" destination="PY6-79-GOF" id="O9e-ew-GbR"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="I2y-qc-5fa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIz-4J-KKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="1955"/>
+            <point key="canvasLocation" x="-1988" y="2837"/>
         </scene>
         <!--Team CreateVC-->
         <scene sceneID="tne-QT-ifu">
@@ -74,20 +75,20 @@
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.73725490196078436" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-KR-73q">
-                                <rect key="frame" x="0.0" y="177" width="414" height="634"/>
+                                <rect key="frame" x="0.0" y="221" width="414" height="541"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <sections/>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-cw-M7z">
-                                <rect key="frame" x="0.0" y="811" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="762" width="414" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="llj-T7-xjw"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Yh-a9-q7J">
-                                <rect key="frame" x="0.0" y="44" width="414" height="133"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="133"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-Tw-22k">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
@@ -143,6 +144,7 @@
                             <constraint firstItem="aKP-KR-73q" firstAttribute="top" secondItem="2Yh-a9-q7J" secondAttribute="bottom" id="z4n-DD-zGr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oiX-nU-Qhj"/>
                     <connections>
                         <outlet property="pokemon1" destination="unM-2z-Zz1" id="QJ0-cb-eAh"/>
                         <outlet property="pokemon2" destination="6Lb-DL-oIb" id="OYx-Oj-8Ck"/>
@@ -157,7 +159,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="2687"/>
+            <point key="canvasLocation" x="-1988" y="3569"/>
+        </scene>
+        <!--View TeamVC-->
+        <scene sceneID="odD-bO-ohn">
+            <objects>
+                <viewController id="DUi-ap-dw5" customClass="ViewTeamVC" customModule="PokePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDa-Pg-gnI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2q-NA-xNy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9wG-j0-aml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3qW-Vz-WDP">
+                                <rect key="frame" x="0.0" y="109" width="414" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YAS-ld-0bb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g2q-NA-xNy" firstAttribute="top" secondItem="YAS-ld-0bb" secondAttribute="top" id="0Cj-Gs-3HY"/>
+                            <constraint firstItem="YAS-ld-0bb" firstAttribute="bottom" secondItem="3qW-Vz-WDP" secondAttribute="bottom" id="5yy-Rd-Lyc"/>
+                            <constraint firstItem="YAS-ld-0bb" firstAttribute="trailing" secondItem="g2q-NA-xNy" secondAttribute="trailing" id="6rB-Qn-pVX"/>
+                            <constraint firstItem="YAS-ld-0bb" firstAttribute="trailing" secondItem="3qW-Vz-WDP" secondAttribute="trailing" id="FbM-ee-Bz3"/>
+                            <constraint firstItem="g2q-NA-xNy" firstAttribute="leading" secondItem="YAS-ld-0bb" secondAttribute="leading" id="GxM-pb-FKa"/>
+                            <constraint firstItem="3qW-Vz-WDP" firstAttribute="leading" secondItem="YAS-ld-0bb" secondAttribute="leading" id="UGN-jP-l2r"/>
+                            <constraint firstItem="3qW-Vz-WDP" firstAttribute="top" secondItem="g2q-NA-xNy" secondAttribute="bottom" id="umb-VV-ALv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zBU-Ay-QIS"/>
+                    <connections>
+                        <outlet property="tableView" destination="3qW-Vz-WDP" id="ytT-gS-Sdi"/>
+                        <outlet property="teamNameLabel" destination="g2q-NA-xNy" id="IkS-Tu-790"/>
+                        <segue destination="OCk-HM-ium" kind="presentation" identifier="GoToViewPokemon" id="dYI-aQ-lbG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEI-ZF-H64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1149" y="3569"/>
         </scene>
         <!--View PokemonVC-->
         <scene sceneID="u15-jx-squ">
@@ -170,56 +218,56 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-g1-pap">
                                 <rect key="frame" x="88" y="244" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-Q0-7fQ">
                                 <rect key="frame" x="86" y="298" width="241" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-Rn-cNX">
                                 <rect key="frame" x="87" y="358" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wer-08-Z7o">
                                 <rect key="frame" x="88" y="408" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ0-u7-szF">
                                 <rect key="frame" x="88" y="447" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH0-Ah-FgB">
                                 <rect key="frame" x="87" y="476" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x53-aE-5lr">
                                 <rect key="frame" x="88" y="543" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-wO-fvG">
                                 <rect key="frame" x="87" y="614" width="239" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Pokemon-Fire-Red" family="Pokemon Fire Red" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -246,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0g-9s-NUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988.4057971014495" y="3506.9196428571427"/>
+            <point key="canvasLocation" x="-1988" y="4383"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Uif-vP-TyI">
@@ -274,8 +322,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="2nw-Wg-bjb" kind="relationship" relationship="viewControllers" id="aZH-Lz-iWl"/>
-                        <segue destination="S7f-Eb-L60" kind="relationship" relationship="viewControllers" id="g8F-Zu-utY"/>
-                        <segue destination="XO3-Un-8nb" kind="relationship" relationship="viewControllers" id="htF-6o-ast"/>
+                        <segue destination="6lC-9h-lwi" kind="relationship" relationship="viewControllers" id="3ds-nl-QpP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKB-GZ-nNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -297,7 +344,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mE-YJ-5sx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="1100"/>
+            <point key="canvasLocation" x="-1988" y="1955"/>
         </scene>
         <!--My Teams-->
         <scene sceneID="MeT-W3-S0f">
@@ -307,9 +354,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-uM-Mr9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-uM-Mr9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Jy-84-nDR"/>
@@ -325,9 +373,27 @@
                     <navigationItem key="navigationItem" id="Jnb-go-tMx"/>
                     <connections>
                         <outlet property="tableView" destination="5AH-uM-Mr9" id="IZM-zE-grT"/>
+                        <segue destination="DUi-ap-dw5" kind="show" identifier="GoToViewTeam" id="DP6-K7-7LP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrD-NJ-Nkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1149" y="2837"/>
+        </scene>
+        <!--My Teams-->
+        <scene sceneID="9j1-O8-JrK">
+            <objects>
+                <navigationController id="6lC-9h-lwi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Teams" image="list.bullet" catalog="system" id="rbV-3x-hkn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XA4-Qo-wke">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S7f-Eb-L60" kind="relationship" relationship="rootViewController" id="NPK-hd-ACO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0H1-Yz-bKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1149" y="1955"/>
         </scene>
@@ -349,6 +415,9 @@
             <point key="canvasLocation" x="-338" y="1955"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dYI-aQ-lbG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="638" height="1134"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>

@@ -93,22 +93,7 @@ class TeamCreateVC: UIViewController {
         if(segue.identifier == "GoToViewPokemon"){
             let destination = segue.destination as! ViewPokemonVC
             let pokemon = pokemons[pokemonViewIndex]
-            destination.spriteRef = pokemon.spriteRef
-            destination.name = pokemon.name
-            
-            destination.types = "Type: "
-            for type in pokemon.types!{
-                destination.types = destination.types! + " " + type
-            }
-            
-            
-            destination.hp = "HP: " + (pokemon.stats?.hp)!
-            destination.attack = "Attack: " + (pokemon.stats?.attack)!
-            destination.defense = "Defense: " + (pokemon.stats?.defense)!
-            destination.spAttack = "spAttack: " + (pokemon.stats?.spAttack)!
-            destination.spDefense = "spDefense: " + (pokemon.stats?.spDefense)!
-            destination.speed = "Speed: " + (pokemon.stats?.speed)!
-            
+            destination.pokemon = pokemon
         }
     }
     
