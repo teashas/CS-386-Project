@@ -23,6 +23,7 @@ class PokemonMemberView: UIView {
         self.pokemon = pokemon
         name.text = pokemon.name
         sprite.image = UIImage(named: pokemon.spriteRef!)
+        sprite?.layer.magnificationFilter = CALayerContentsFilter.nearest
     }
     
     func setBorder(){

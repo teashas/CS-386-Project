@@ -49,6 +49,7 @@ extension ViewTeamVC: UITableViewDataSource{
         
         cell.name.text = pokemon.name
         cell.sprite?.image = UIImage(named: pokemon.spriteRef!)
+        cell.sprite?.layer.magnificationFilter = CALayerContentsFilter.nearest
         cell.id.text = pokemon.id
         cell.selectionStyle = .gray
         return cell
