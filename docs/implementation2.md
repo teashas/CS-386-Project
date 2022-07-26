@@ -82,6 +82,7 @@ Print Screen:
 https://www.youtube.com/watch?v=y66Dca0wdnM
 
 ## 5. Code Quality
+For the code quality on our project our team decided that the best way to foster quality code would be to first discuss how we wanted it to be coded. We first decided that it was important to check each other's work, which girhub helped with the merge requests. We also decided to discuss which changes were being made and to talk it through with the team prior to coding the changes. 
 
 ## 6. Lessons Learned
 
