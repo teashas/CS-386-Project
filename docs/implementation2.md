@@ -84,3 +84,11 @@ https://www.youtube.com/watch?v=y66Dca0wdnM
 ## 5. Code Quality
 
 ## 6. Lessons Learned
+
+We are happy with how our second implementation turned out. We were able to create our MVP, along with some extra features.
+ 
+In this implementation, we changed our product from a web application to an iOS application. This transition went smoother than expected, mainly due to the fact that our requirements and planning were already laid out and iOS development was something we are overall more familiar with. 
+ 
+Another major change we made was the implementation of Apple’s core data instead of Firebase. We decided that PokePicker is an application that does not need to be connected to the internet to function. Using Apple’s core data to store the user’s teams to the device allows the app to function offline. That being said, if we were to continue developing the app, we would need to implement Firebase so users can upload and view other user’s teams. Our app would then have 2 databases to account for offline and online use.
+ 
+One thing we wish we had more time for was design. We wanted the app to feel like an old Gameboy game. We used a font taken straight from an old Pokemon game and it does contribute to a Gameboy “feel”. However, there is much more we could have done to contribute to the aesthetic. The app feels a bit like a generic iOS app. Given more time, we would probably add more color and try some different layouts that further resemble a Gameboy game.
