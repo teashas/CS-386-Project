@@ -69,6 +69,12 @@ protocol PokemonManagerDelegate{
     func didGetPokemon(pokeArr: [Pokemon])
 }
 
+protocol PokemonManagerProtocol{
+    func getPokemon() -> String
+    
+    func parseJSON() -> [Pokemon]?
+}
+
 struct PokemonData: Codable{
     var name: Name
     var image: Image
@@ -92,8 +98,6 @@ struct PokemonData: Codable{
     struct Image: Codable{
         var sprite: String
     }
-
-    
 }
 
 

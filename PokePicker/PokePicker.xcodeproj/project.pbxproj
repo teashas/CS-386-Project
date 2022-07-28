@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4508C94E2891F9F800592F83 /* PokePickerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C94D2891F9F800592F83 /* PokePickerUnitTests.swift */; };
+		4508C9552891FBDF00592F83 /* MockPokemonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4508C9542891FBDF00592F83 /* MockPokemonManager.swift */; };
 		453522E0288DBA6800079C4D /* MyTeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453522DF288DBA6800079C4D /* MyTeamsVC.swift */; };
 		453522E3288DBFB700079C4D /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453522E1288DBFB700079C4D /* TeamCell.swift */; };
 		453522E4288DBFB700079C4D /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453522E2288DBFB700079C4D /* TeamCell.xib */; };
@@ -42,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4508C94F2891F9F800592F83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459EF92F288AEC6A005CE769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459EF936288AEC6A005CE769;
+			remoteInfo = PokePicker;
+		};
 		45C498F528907FFE00C88FB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459EF92F288AEC6A005CE769 /* Project object */;
@@ -52,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4508C94B2891F9F800592F83 /* PokePickerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokePickerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4508C94D2891F9F800592F83 /* PokePickerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokePickerUnitTests.swift; sourceTree = "<group>"; };
+		4508C9542891FBDF00592F83 /* MockPokemonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPokemonManager.swift; sourceTree = "<group>"; };
 		453522DF288DBA6800079C4D /* MyTeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamsVC.swift; sourceTree = "<group>"; };
 		453522E1288DBFB700079C4D /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		453522E2288DBFB700079C4D /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
@@ -89,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4508C9482891F9F800592F83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459EF934288AEC6A005CE769 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,11 +126,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4508C94C2891F9F800592F83 /* PokePickerUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4508C9562891FE6400592F83 /* Mocks */,
+				4508C94D2891F9F800592F83 /* PokePickerUnitTests.swift */,
+			);
+			path = PokePickerUnitTests;
+			sourceTree = "<group>";
+		};
+		4508C9562891FE6400592F83 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4508C9542891FBDF00592F83 /* MockPokemonManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		459EF92E288AEC6A005CE769 = {
 			isa = PBXGroup;
 			children = (
 				459EF939288AEC6A005CE769 /* PokePicker */,
 				45C498F028907FFE00C88FB1 /* PokePickerUITests */,
+				4508C94C2891F9F800592F83 /* PokePickerUnitTests */,
 				459EF938288AEC6A005CE769 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +158,7 @@
 			children = (
 				459EF937288AEC6A005CE769 /* PokePicker.app */,
 				45C498EF28907FFE00C88FB1 /* PokePickerUITests.xctest */,
+				4508C94B2891F9F800592F83 /* PokePickerUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +244,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4508C94A2891F9F800592F83 /* PokePickerUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4508C9532891F9F800592F83 /* Build configuration list for PBXNativeTarget "PokePickerUnitTests" */;
+			buildPhases = (
+				4508C9472891F9F800592F83 /* Sources */,
+				4508C9482891F9F800592F83 /* Frameworks */,
+				4508C9492891F9F800592F83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4508C9502891F9F800592F83 /* PBXTargetDependency */,
+			);
+			name = PokePickerUnitTests;
+			productName = PokePickerUnitTests;
+			productReference = 4508C94B2891F9F800592F83 /* PokePickerUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		459EF936288AEC6A005CE769 /* PokePicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 459EF94B288AEC6C005CE769 /* Build configuration list for PBXNativeTarget "PokePicker" */;
@@ -254,6 +310,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					4508C94A2891F9F800592F83 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 459EF936288AEC6A005CE769;
+					};
 					459EF936288AEC6A005CE769 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -281,11 +341,19 @@
 			targets = (
 				459EF936288AEC6A005CE769 /* PokePicker */,
 				45C498EE28907FFE00C88FB1 /* PokePickerUITests */,
+				4508C94A2891F9F800592F83 /* PokePickerUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4508C9492891F9F800592F83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459EF935288AEC6A005CE769 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +381,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4508C9472891F9F800592F83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4508C94E2891F9F800592F83 /* PokePickerUnitTests.swift in Sources */,
+				4508C9552891FBDF00592F83 /* MockPokemonManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		459EF933288AEC6A005CE769 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +428,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4508C9502891F9F800592F83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 459EF936288AEC6A005CE769 /* PokePicker */;
+			targetProxy = 4508C94F2891F9F800592F83 /* PBXContainerItemProxy */;
+		};
 		45C498F628907FFE00C88FB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 459EF936288AEC6A005CE769 /* PokePicker */;
@@ -378,6 +460,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4508C9512891F9F800592F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M6CW5X3GGG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ricardochairez.PokePickerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokePicker.app/PokePicker";
+			};
+			name = Debug;
+		};
+		4508C9522891F9F800592F83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M6CW5X3GGG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ricardochairez.PokePickerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokePicker.app/PokePicker";
+			};
+			name = Release;
+		};
 		459EF949288AEC6C005CE769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -585,6 +703,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4508C9532891F9F800592F83 /* Build configuration list for PBXNativeTarget "PokePickerUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4508C9512891F9F800592F83 /* Debug */,
+				4508C9522891F9F800592F83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		459EF932288AEC6A005CE769 /* Build configuration list for PBXProject "PokePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
